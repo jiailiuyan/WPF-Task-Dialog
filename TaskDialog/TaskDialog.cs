@@ -617,7 +617,7 @@ namespace TaskDialogInterop
 			vtd.ExpandedByDefault = options.ExpandedByDefault;
 			vtd.ExpandFooterArea = options.ExpandToFooter;
 			vtd.PositionRelativeToWindow = true;
-			vtd.RightToLeftLayout = false;
+			vtd.RightToLeftLayout = options.IsRightToLeft;
 			vtd.NoDefaultRadioButton = false;
 			vtd.CanBeMinimized = false;
 			vtd.ShowProgressBar = options.ShowProgressBar;
@@ -682,7 +682,8 @@ namespace TaskDialogInterop
 			{
 				td.Owner = options.Owner;
 			}
-
+            if (options.IsRightToLeft)
+                td.FlowDirection = FlowDirection.RightToLeft;
 			td.ShowDialog();
 
 			TaskDialogResult result = null;

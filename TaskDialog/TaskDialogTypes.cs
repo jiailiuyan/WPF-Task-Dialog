@@ -200,6 +200,13 @@ namespace TaskDialogInterop
 		/// time to complete, etc.
 		/// </remarks>
 		public bool EnableCallbackTimer;
+        /// <summary>
+        /// Indicates that the task dialog will be FlowDirection.RightToLeft mode.
+        /// </summary>
+        /// <remarks>
+        /// Enable this in order to make dialogs right to left.
+        /// </remarks>
+        public bool IsRightToLeft;
 	}
 	/// <summary>
 	/// Provides data for all task dialog buttons.
