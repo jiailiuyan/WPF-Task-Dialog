@@ -92,7 +92,7 @@ namespace WPFTest
 		private void button1_Click(object sender, RoutedEventArgs e)
 		{
 			TaskDialogOptions config = new TaskDialogOptions();
-
+            config.CollapsedControlText = "pull down";
 			config.Owner = this;
 			config.Title = "Task Dialog Title";
 			config.MainInstruction = "The main instruction text for the TaskDialog goes here";
