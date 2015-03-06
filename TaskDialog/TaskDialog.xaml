@@ -169,10 +169,10 @@
 									</MultiTrigger>
 									<Trigger Property="IsChecked" Value="True">
 										<Setter TargetName="ShowDetailsArrow" Property="Source" Value="{DynamicResource ExpArrUp1}"/>
-										<Setter TargetName="ShowDetailsLabel" Property="Text" Value="Hide details"/>
+                                        <Setter TargetName="ShowDetailsLabel" Property="Text" Value="{Binding ExpandedControlText}"/>
 									</Trigger>
 									<Trigger Property="IsChecked" Value="False">
-										<Setter TargetName="ShowDetailsLabel" Property="Text" Value="Show details"/>
+                                        <Setter TargetName="ShowDetailsLabel" Property="Text" Value="{Binding CollapsedControlText}"/>
 									</Trigger>
 									<MultiTrigger>
 										<MultiTrigger.Conditions>

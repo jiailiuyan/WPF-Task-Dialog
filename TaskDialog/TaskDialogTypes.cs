@@ -207,6 +207,14 @@ namespace TaskDialogInterop
         /// Enable this in order to make dialogs right to left.
         /// </remarks>
         public bool IsRightToLeft;
+        /// <summary>
+        /// Indicates text that shown when expander is expanded.
+        /// </summary>
+        public string ExpandedControlText;
+        /// <summary>
+        /// Indicates text that shown when expander is collapsed.
+        /// </summary>
+        public string CollapsedControlText;
 	}
 	/// <summary>
 	/// Provides data for all task dialog buttons.

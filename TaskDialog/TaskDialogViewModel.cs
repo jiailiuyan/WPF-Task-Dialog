@@ -104,7 +104,42 @@ namespace TaskDialogInterop
 				_radioResult = RadioButtons[DefaultButtonIndex].ID;
 			}
 		}
-
+        /// <summary>
+        /// Indicates text that shown when expander is expanded.
+        /// </summary>
+        public string ExpandedControlText
+        {
+            get
+            {
+                return options.ExpandedControlText;
+            }
+            set
+            {
+                if (options.ExpandedControlText != value)
+                {
+                    options.ExpandedControlText = value;
+                    RaisePropertyChangedEvent("ExpandedControlText");
+                }
+            }
+        }
+        /// <summary>
+        /// Indicates text that shown when expander is collapsed.
+        /// </summary>
+        public string CollapsedControlText
+        {
+            get
+            {
+                return options.CollapsedControlText;
+            }
+            set
+            {
+                if (options.CollapsedControlText != value)
+                {
+                    options.CollapsedControlText = value;
+                    RaisePropertyChangedEvent("CollapsedControlText");
+                }
+            }
+        }
 		/// <summary>
 		/// Gets the window start position.
 		/// </summary>
